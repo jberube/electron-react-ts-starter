@@ -11,7 +11,7 @@ ipcRenderer.on('response' , (event:IpcMessageEvent , args:any)=>{
 const App: React.FC = () => {
   return (
     <div className="App">
-      <button onClick={e=>ipcRenderer.send('channel' , {title : 'hi' , content : 'hello this is my message'})} >
+      <button onClick={e=>ipcRenderer.send('channel' , {title : 'hi' , content : 'Hello! This is my message'})} >
         Click me
       </button>
     </div>
